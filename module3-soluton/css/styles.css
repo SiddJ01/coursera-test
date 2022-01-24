@@ -3,7 +3,19 @@ body {
   color: #fff;
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
+  padding-top: 40px; 
 }
+
+
+
+.OurMenu{
+  clear: both; 
+  height: 100px ; 
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Oxygen' , sans-serif;
+  font-weight: bold;
+  }
 
 
 #header-nav {
@@ -11,18 +23,21 @@ body {
   height: 125px;
   border-radius: 0;
   border: 0;
+  position: relative;
+
 }
 
 
 .navbar-brand {
   padding-top: 25px;
+  position: relative;
 }
 .navbar-brand h1 { /
   font-family: 'Lora', serif;
   color:#61122f ;
   font-size: 3em;
   text-transform: uppercase;
-
+  position: relative;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 30px;
@@ -31,47 +46,56 @@ body {
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
+  top: 5px;
 }
 
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
+
 .mtitle{
   font-family: 'Lora', serif;
-        display: flex;
+      display: flex;
       text-align: center;
-       align-items:center;
-        justify-content:center;
+      align-items:center;
+      justify-content:center;
       vertical-align: middle;
       color:#0d1137;
       background-color: #e52165; 
       border: 2px solid;
       height: 100px;
       font-size: 1.5em;
+      font-weight: bold;
+
     }
 
 
 #nav-list {
+
   margin-top: 10px;
+  background-color: #e52165;
 }
 #nav-list a {
+  
   color: #951C49;
   text-align: center;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+ 
+  background-color: #e52165;
 }
 #nav-list a span {
+  
   font-size: 1.8em;
 }
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  
+  border: 1px; solid: #61122f;
+  top: 5px;
 }
 .navbar-header button.navbar-toggle {
+  top: 5px;
   clear: both;
-  margin-top: -30px;
+  margin-top: 2px;
 }
 
 .panel-footer {
@@ -101,7 +125,7 @@ body {
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
-/* END FOOTER */
+
 
 .jumbotron{
   font-size: large;
@@ -113,39 +137,11 @@ body {
   border: 2px solid #3F0C1F;
 }
 
-#menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
 
-}
-
-
-.menu-item-tile {
-  margin-bottom: 25px;
-}
-.menu-item-tile hr {
-  width: 80%;
-}
-.menu-item-tile .menu-item-price {
-  font-size: 1.1em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
-}
-.menu-item-tile .menu-item-price span {
-  font-size: .6em;
-}
 
 @media (min-width: 1200px) {
   .container .jumbotron {
+
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
   }
@@ -171,25 +167,19 @@ body {
 
 @media (max-width: 767px) {
   
+
+
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
+    
   }
   .navbar-brand h1 { 
     padding-top: 10px;
     font-size: 5vw; 
+    
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  
 
   .panel-footer section {
     margin-bottom: 30px;
@@ -207,7 +197,10 @@ body {
     padding: 0;
   }
  
+  
 }
+
+
 
 @media (max-width: 479px) {
   /* Header */
@@ -215,13 +208,7 @@ body {
     padding-top: 5px;
     font-size: 6vw;
   }
-  /* End Header */
   
-  /* Home page */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
 
   .col-xxs-12 {
     position: relative;
